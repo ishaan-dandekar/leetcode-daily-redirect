@@ -2,7 +2,10 @@ chrome.webNavigation.onBeforeNavigate.addListener(async (details) => {
   try {
     const url = new URL(details.url);
 
-    if (url.hostname === "leetcode.com" && url.pathname === "/daily") {
+    if (
+      url.hostname === "leetcode.com" &&
+      (url.pathname === "/daily" || url.pathname === "/daily/")
+    ) {
 
       const res = await fetch("https://leetcode.com/graphql", {
         method: "POST",
