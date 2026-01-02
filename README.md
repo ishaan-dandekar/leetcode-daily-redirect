@@ -9,16 +9,6 @@ https://leetcode.com/daily
 The extension listens for that URL, fetches the current daily challenge from LeetCode’s API, and redirects the page to the correct problem. No scraping. No external services. No hosting.
 
 ---
-
-## How It Works
-
-1. You navigate to `leetcode.com/daily`.  
-2. The extension intercepts the navigation.  
-3. It calls LeetCode’s GraphQL endpoint for the daily challenge.  
-4. The tab is redirected to the actual problem page.
-
----
-
 ## Installation (Developer Mode)
 
 1. Download or clone this repository.  
@@ -36,18 +26,23 @@ https://leetcode.com/daily
 You will be redirected to today’s Daily Problem.
 
 ---
+## How It Works
 
+1. You navigate to `leetcode.com/daily`.  
+2. The extension intercepts the navigation.  
+3. It calls LeetCode’s GraphQL endpoint for the daily challenge.  
+4. The tab is redirected to the actual problem page.
+
+---
 ## Why This Exists
 
 LeetCode does not provide a static link that always opens the Daily Challenge.  
 This extension simply fills that gap without relying on third-party servers.
 
 ---
-
 ## Notes
 
 - Works in browsers that support Manifest V3.  
-- If LeetCode changes their API structure, the extension may need an update.  
-- The goal is clarity: the code is intentionally minimal and easy to modify.
+- If LeetCode changes their API structure, the extension may need an update. (Unlikely)
 
 ---
