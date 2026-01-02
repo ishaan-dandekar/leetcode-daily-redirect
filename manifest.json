@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "LeetCode Daily Redirect",
   "version": "1.0",
-  "description": "Redirects /daily to today's LeetCode Daily Challenge",
+  "description": "Redirects leetcode.com/daily to today's LeetCode Daily Challenge",
 
   "permissions": [
     "webNavigation",
