@@ -9,13 +9,13 @@ https://leetcode.com/daily
 The extension listens for that URL, fetches the current daily challenge from LeetCode’s API, and redirects the page to the correct problem. No scraping. No external services. No hosting.
 
 ---
-## Installation (Developer Mode)
+## Installation (Developer Mode required)
 
 1. Download or clone this repository.  
 2. Open Chrome and go to `chrome://extensions`.  
 3. Enable **Developer Mode**.  
 4. Click **Load unpacked**.  
-5. Select this project folder.  
+5. Select this project folder and enable the loaded extension.  
 
 Then open:
 
